@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OutilsConsole.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContactsManager.Business\ContactsManager.Business.csproj">
+      <Project>{9fa472a3-84b2-48d1-a683-f3e6f80b80cf}</Project>
+      <Name>ContactsManager.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContactsManager.DAL\ContactsManager.DAL.csproj">
+      <Project>{5ec9fa26-0c14-4b55-8408-96186f760466}</Project>
+      <Name>ContactsManager.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
